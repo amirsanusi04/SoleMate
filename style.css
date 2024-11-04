@@ -83,5 +83,34 @@ nav ul li a {
 nav ul li a:hover {
     color: #ccc;
 }
+/* Checklist Table Styling */
+.checklist-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    color: #fff;
+    font-size: 1em;
+}
+
+.checklist-table th, .checklist-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #444;
+}
+
+.checklist-table th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+.checklist-table td {
+    background-color: #222;
+}
+
+.checklist-table td:nth-child(1) {
+    text-align: left; /* Align task names to the left */
+}
+
 
 
