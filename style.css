@@ -1,116 +1,181 @@
-/* Basic Styling */
-body {
+body.care-tips {
+    background-image: url("black.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
     background-color: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
-section {
-    padding: 50px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.content-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    gap: 20px;
-}
-
-/* Image Styling */
-.content-container img {
-    width: 50%; /* Adjust width if needed */
-    height: auto;
+header,
+main,
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
     border-radius: 10px;
 }
 
-/* Text Styling */
-.text-content {
-    max-width: 55%;
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
 }
 
-/* Alignments for Left and Right Sections */
-.left-align {
-    flex-direction: row;
-    text-align: left;
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
 }
 
-.right-align {
-    flex-direction: row-reverse;
-    text-align: left;
+a:hover {
+    color: #00bcd4;
 }
 
-/* Styling for Section Backgrounds */
-#home, #shoe-reviews, #care-tips {
-    background-color: #111; /* Slightly lighter background for sections */
-    border-radius: 8px;
-    padding: 30px;
-    margin: 20px 0;
-}
-
-/* Navigation Styling */
+/* Navigation */
 nav {
-    background-color: #222;
-    padding: 15px 0;
-    text-align: center;
     position: sticky;
     top: 0;
+    background-color: #111;
+    padding: 10px 0;
     z-index: 1000;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
     font-size: 1.2em;
-    transition: color 0.3s;
+    padding: 5px 10px;
 }
 
 nav ul li a:hover {
-    color: #ccc;
-}
-/* Checklist Table Styling */
-.checklist-table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-    color: #fff;
-    font-size: 1em;
+    background-color: #00bcd4;
+    color: #000;
+    border-radius: 5px;
 }
 
-.checklist-table th, .checklist-table td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #444;
-}
-
-.checklist-table th {
-    background-color: #333;
-    color: #fff;
-    font-weight: bold;
-}
-
-.checklist-table td {
+/* Footer */
+footer {
     background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-.checklist-table td:nth-child(1) {
-    text-align: left; /* Align task names to the left */
+footer p,
+footer a {
+    color: #fff;
+    margin: 5px;
 }
 
+footer .social-icons {
+    margin-top: 10px;
+}
 
+footer .social-icons a {
+    margin: 0 10px;
+    font-size: 1.5em;
+}
 
+/* Hero Section */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border-bottom: 3px solid #444;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+section h2 {
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #222;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 0.9em;
+}
+
+/* Buttons */
+button {
+    background-color: #00bcd4;
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #008c9e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}

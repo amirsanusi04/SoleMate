@@ -4,93 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoleMate</title>
+    <title>SoleMate - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#shoe-reviews">Shoe Reviews</a></li>
-            <li><a href="#care-tips">Care Tips</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shoe-reviews.html">Shoe Reviews</a></li>
+            <li><a href="care-tips.html">Care Tips</a></li>
+            <li><a href="fashion-advice.html">Fashion Advice</a></li>
+            <li><a href="user-reviews.html">User Reviews</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
     </nav>
 
-    <!-- Homepage Section  -->
-    <section id="home" class="content-container left-align">
-        <img src="homepage.jpg" alt="Home Banner Image">
-        <div class="text-content">
-            <h1>Welcome to SoleMate</h1>
-            <p>Your go-to site for detailed shoe reviews, care tips, and fashion advice.</p>
-        </div>
-    </section>
+    <header>
+        <h1>Welcome to SoleMate</h1>
+        <p>Your ultimate guide to shoe care, reviews, and fashion advice.</p>
+        <button>Explore Now</button>
+    </header>
 
-    <!-- Shoe Reviews Section  -->
-    <section id="shoe-reviews" class="content-container left-align">
-        <div class="text-content">
-            <h2>Shoe Reviews</h2>
-            <p>In-depth reviews of the latest shoe releases, covering pros, cons, and user ratings.</p>
-        </div>
-        <img src="reviews.jpg" alt="Shoe Review Image">
-    </section>
-
-    <!-- Care Tips Section -->
-    <section id="care-tips" class="content-container left-align">
-        <img src="caretips.jpg" alt="Care Tips Image">
-        <div class="text-content">
-            <h2>Care Tips</h2>
-            <p>Learn how to keep your shoes looking fresh with tips for different materials like leather, suede, and
-                sneakers.</p>
-
-            <!-- Checklist Table -->
-            <table class="checklist-table">
-                <thead>
-                    <tr>
-                        <th>Task</th>
-                        <th>3-5 Days</th>
-                        <th>1-2 Weeks</th>
-                        <th>3-4 Weeks</th>
-                        <th>5-6 Weeks</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Clean Shoe</td>
-                        <td>✓</td>
-                        <td>✓</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Put in Filler</td>
-                        <td>✓</td>
-                        <td></td>
-                        <td>✓</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Change Laces</td>
-                        <td></td>
-                        <td>✓</td>
-                        <td></td>
-                        <td>✓</td>
-                    </tr>
-                    <tr>
-                        <td>Leave in Moist Areas</td>
-                        <td></td>
-                        <td></td>
-                        <td>✓</td>
-                        <td>✓</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
+    <main>
+        <section>
+            <h2>Latest Highlights</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="homepage.jpg" alt="Shoe 1">
+                    <h3>Top Sneakers of 2024</h3>
+                    <p>Discover the hottest sneakers of the year with our detailed reviews.</p>
+                </div>
+                <div class="card">
+                    <img src="caretips.jpg" alt="Care Tip">
+                    <h3>Ultimate Shoe Care Guide</h3>
+                    <p>Keep your kicks looking fresh with our pro cleaning tips.</p>
+                </div>
+                <div class="card">
+                    <img src="reviews.jpg" alt="Fashion Tip">
+                    <h3>Styling with Confidence</h3>
+                    <p>Pair your shoes with the perfect outfit for any occasion.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 SoleMate. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
     </footer>
 </body>
+
+</html>
